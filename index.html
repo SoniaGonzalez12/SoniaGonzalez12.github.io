@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Demo-Examen</title>
+    <link rel="stylesheet" href="./assets/css/style.css" />
+  </head>
+
+  <body>
+    <div class="container">
+      <!-- ENCABEZADO -->
+
+      <header>
+        <div class="titulo">
+          <h1>Gaming<span>Dojo</span></h1>
+        </div>
+        <div class="iconos">
+          <select name="seleccionar">
+            <option value="euro">Euro €</option>
+            <option value="dolar">Dolar $</option>
+            <option value="peso">Peso $</option>
+          </select>
+          <div class="contador-carro">
+            <img class="carro" src="./assets/img/cart-light.png" alt="carro" />
+            <span id="numero-compra">0</span>
+          </div>
+          <img src="./assets/img/search-light.png" alt="buscar" />
+        </div>
+      </header>
+
+      <!-- CONTENIDO PRINCIPAL CARRUSEL-->
+
+      <main>
+        <div class="carrusel">
+          <div class="imagen-principal">
+            <img src="./assets/img/cafe-neko.png" alt="neko" />
+          </div>
+          <div class="imagen-principal">
+            <img src="./assets/img/pixel-ninjas-2.png" alt="ninjas" />
+          </div>
+          <div class="imagen-principal">
+            <img src="./assets/img/stonepunk.png" alt="stone" />
+          </div>
+          <img
+            class="prev"
+            onclick="plusCarrusel(-1)"
+            src="./assets/img/chevron-left.png"
+            alt="izq"
+          />
+          <img
+            class="next"
+            onclick="plusCarrusel(1)"
+            src="./assets/img/chevron-left.png"
+            alt="derecha"
+          />
+        </div>
+        <div class="barras">
+          <span class="barra" onclick="currentCarrusel(1)"></span>
+          <span class="barra" onclick="currentCarrusel(2)"></span>
+          <span class="barra" onclick="currentCarrusel(3)"></span>
+        </div>
+
+        <!-- CAJAS DE PROMOCIONES -->
+
+        <div class="cajas">
+          <div class="tarjetas">
+            <img src="./assets/img/cafe-neko.png" alt="neko" />
+            <h3>Cafe Neko: Gold Edition</h3>
+            <div class="fila-iconos">
+              <img src="./assets/img/windows.png" alt="windows" />
+              <img src="./assets/img/apple.png" alt="apple" />
+            </div>
+            <div class="promocion">
+              <p class="descuento">-20%</p>
+              <div class="valores">
+                <small class="precio-rebaja">€14.98</small>
+                <p>€10.40</p>
+              </div>
+              <button id="comprar-neko">Buy</button>
+            </div>
+          </div>
+
+          <div class="tarjetas">
+            <img src="./assets/img/pixel-ninjas-2.png" alt="ninjas" />
+            <h3>Pixel Ninjas 2</h3>
+            <div class="fila-iconos">
+              <img src="./assets/img/windows.png" alt="windows" />
+              <img src="./assets/img/apple.png" alt="apple" />
+            </div>
+            <div class="promocion">
+              <p class="descuento">-10%</p>
+              <div class="valores">
+                <small class="precio-rebaja">€8.19</small>
+                <p>€7.39</p>
+              </div>
+              <button id="comprar-ninjas">Buy</button>
+            </div>
+          </div>
+
+          <div class="tarjetas">
+            <img src="./assets/img/stonepunk.png" alt="stone" />
+            <h3>Stonepunk 10000 BCE</h3>
+            <div class="fila-iconos">
+              <img src="./assets/img/windows.png" alt="windows" />
+              <img src="./assets/img/apple.png" alt="apple" />
+              <img id="linux" src="./assets/img/linux.png" alt="linux" />
+            </div>
+            <br />
+            <div class="promocion">
+              <p class="descuento">NEW</p>
+              <div class="valores">
+                <p>€19.99</p>
+              </div>
+              <button id="comprar-stone">Buy</button>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+
+    <script src="./assets/js/script.js"></script>
+  </body>
+</html>
